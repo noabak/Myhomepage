@@ -18,5 +18,13 @@ def portofolio():
 def fakebook():
     return render_template("fakebook.html")
 
+@app.route("/portofolio/boogle")
+def boogle():
+    return render_template("boogle.html")
+
+@app.route("/portofolio/hairsalon")
+def hairsalon():
+    return render_template("hairsalon.html")
+
 if __name__== "__main__":
     app.run(port="5001")
