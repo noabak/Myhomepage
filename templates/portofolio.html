@@ -1,14 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Portofolio</title>
-</head>
-<body>
-   <ul>
-       <li><a href="/portofolio/fakebook">Fakebook</a></li>
-       <li><a href="/portofolio/boogle">Boogle</a></li>
-       <li><a href="/portofolio/hairsalon">Hair-salon</a></li>
-   </ul>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title%}My Portofolio{% endblock title%}
+
+{% block content%}
+<br>
+<br>
+  <!-- Portfolio Section -->
+  <section class="page-section portfolio" id="portfolio">
+    <div class="container">
+
+      <!-- Portfolio Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Portfolio Grid Items -->
+      <div class="row">
+
+        <!-- Portfolio Item 1 -->
+        <div class="col-md-6 col-lg-4">
+            <a href="/portofolio/fakebook"><h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Fakebook</h2></a>
+        </div>
+
+        <!-- Portfolio Item 2 -->
+        <div class="col-md-6 col-lg-4">
+            <a href="/portofolio/boogle"><h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Boogle</h2></a>
+        </div>
+
+
+        <!-- Portfolio Item 3 -->
+        <div class="col-md-6 col-lg-4">
+            <a href="/portofolio/hairsalon"><h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Hairsalon</h2></a>
+        </div>
+
+
+    </div>
+    </div>
+  </section>
+{% endblock content%}
